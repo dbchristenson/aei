@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AEI Home</title>
+
+    {% extends 'base.html' %}
+
+    {% block css %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    {% endblock %}
 </head>
 <body>
-    <div>Hello</div>
+    {% block content %}
+    <main>
+        <div class="home-subheader">
+            <h1>PT AGRA ENERGI INDONESIA</h1>
+            <h2>privately held, high impact, oil and gas exploration</h2>
+        </div>
+
+        <div class="home-description">
+            <p>
+            PT Agra Energi Indonesia is a privately held company, established in 2015, focused on high impact oil and gas
+            exploration in Indonesia.
+            
+            
+            PT Agra Energi Indonesia's management team has over 100 years of experience in Indonesia and has a proven and extensive
+            track record in the Indonesian oil and gas industry with British Gas, ARCO, UNOCAL, SANTOS and Black Gold Energy.
+            Additionally, the team has commercial experience raising capital for Black Gold Energy; whose investors included Goldman Sachs and Temasek.
+            </p>
+        </div>
+    </main>
+    {% endblock %}
 </body>
 </html>

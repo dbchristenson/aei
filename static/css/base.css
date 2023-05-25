@@ -1,0 +1,92 @@
+:root {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    --text-primary: white;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #a8edfcc5;
+}
+
+@font-face {
+    font-family: 'Nunito-Var';
+    src: url('/static/fonts/nunito-var.ttf');
+}
+
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Scrollbar Styling */
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(14, 69, 110, 100);
+}
+
+/* Nav Styling */
+
+.img-logo {
+    width: 14rem;
+    height: auto;
+}
+
+.navbar {
+    width: 100%;
+    height: 8rem;
+    top: 0;
+    background-color: var(--bg-primary);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-item {
+    margin-left: 16px;
+    margin-right: 32px;
+}
+
+.navbar-item:first-child {
+    margin-left: 0;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: 750;
+    font-family: 'Nunito-Var', sans-serif;
+
+    transition: filter 0.3s ease;
+}
+
+.navbar-item a:hover {
+    filter: brightness(0.8);
+}
+
+/* Footer Styling */
+.copyright {
+    text-align: center;
+    margin: 0 auto;
+    background: var(--bg-secondary);
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

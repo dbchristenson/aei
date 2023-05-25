@@ -1,0 +1,38 @@
+<!--base.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+
+    {% load static %}
+    {% block css %}{% endblock %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="div-logo">
+                <img class="img-logo" src="{% static 'images/logo-white.svg' %}" alt="logo">
+            </div>
+
+            <ul class="navbar-links">
+                <li class="navbar-item"><a href="">Home</a></li>
+                <li class="navbar-item"><a href="">Conduct</a></li>
+                <li class="navbar-item"><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <footer class="copyright">
+       <p>© PT Agra Energi Indonesia - 2020</p>
+    </footer>
+</body>
+</html>
