@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'OpenSans-Var';
+    src: url('/static/fonts/opensans-var.ttf');
+}
+
+@font-face {
+    font-family: 'Nunito-Var';
+    src: url('/static/fonts/nunito-var.ttf');
+}
+
+main {
+    margin-top: 0rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.home-subheader {
+    text-align: center;
+    font-family: 'Nunito-Var', sans-serif;
+}
+
+.home-subheader h1 {
+    margin-bottom: 0;
+}
+
+.home-subheader h2 {
+    margin-top: 0.5rem;
+}
